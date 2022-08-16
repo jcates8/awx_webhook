@@ -1,0 +1,9 @@
+---
+- name: Playbook via WebHook
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+  - name: my debug task
+    debug:
+      msg: "I ran bc of a webhook"
